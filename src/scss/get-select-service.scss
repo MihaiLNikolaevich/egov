@@ -1,0 +1,134 @@
+.get-select-service{
+  .info-count{
+    font-size: 18px;
+    line-height: 22px;
+    b{
+      color: #0047FF;
+    }
+    p{
+      margin: 10px 0;
+    }
+  }
+  form{
+    margin: 30px 0 10px;
+    position: relative;
+  }
+  input{
+    font-weight: 500;
+    font-size: 12px;
+    color: #000000;
+    padding-right: 50px;
+    border: 2px solid rgba(0, 71, 255, 0.8);
+  }
+
+  .btn-tr{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px 20px;
+  }
+
+  .cn__select-link{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -7.5px;
+  }
+  .select-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    margin: 7.5px;
+    min-height: 50px;
+    height: fit-content;
+    padding: 10px;
+    background: #E6EDFF;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #1E1E1E;
+    transition: .25s;
+    &.active{
+      color: #FFFFFF;
+      background: #0047FF;
+    }
+    .count{
+      display: block;
+      margin-left: 20px;
+      width: 25px;
+      height: 24px;
+      font-weight: 600;
+      font-size: 14px;
+      border: 1px solid #97A7CC;
+      border-radius: 4px;
+      text-align: center;
+    }
+  }
+}
+
+
+.accordion {
+
+  .accordion__it{
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    padding: 20px 17px 20px 10px;
+    margin-top: 10px;
+    .ico{
+      position: static;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      transition: transform .3s ease-out;
+    }
+    &.active{
+      .ico{
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+
+
+}
+
+.accordion__header {
+  display: flex;
+  justify-content: space-between;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.accordion__info{
+  padding-right: 15px;
+  p {
+    font-size: 12px;
+    line-height: 110%;
+    margin-top: 10px;
+  }
+}
+.accordion__title{
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+.accordion__content {
+  font-size: 12px;
+  line-height: 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  ul{
+    margin-top: 30px;
+  }
+  li{
+    margin-top: 10px;
+    padding: 15px 10px 20px;
+    background: rgba(245, 245, 245, 0.3);
+    border: 1px solid rgba(217, 217, 217, 0.5);
+    border-radius: 4px;
+  }
+}
+

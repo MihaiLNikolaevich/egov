@@ -1,0 +1,65 @@
+$color: #1E1E1E;
+.blog {
+  .gall {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 30px;
+  }
+
+  .gall__it {
+    display: block;
+  }
+
+  .cn__img {
+    overflow: hidden;
+    border-radius: 4px;
+    height: 56vw;
+    max-height: 230px;
+  }
+
+  .img {
+    object-fit: cover;
+  }
+
+  figcaption {
+    margin: 10px 0 25px;
+    font-weight: bold;
+    color: $color;
+  }
+
+  time {
+    font-size: 14px;
+    line-height: 120%;
+    color: #6E7377;
+  }
+
+  .btn {
+    margin: 40px auto 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .blog {
+    &.wrap {
+      padding-top: 6.5rem;
+      padding-bottom: 3rem;
+    }
+
+    h2.title {
+      text-align: center;
+    }
+
+    figcaption {
+      margin: 1rem 0 1.5rem;
+    }
+
+    .gall {
+      grid-gap: 3rem;
+    }
+
+    .btn {
+      margin-top: 2.7rem;
+    }
+  }
+
+}

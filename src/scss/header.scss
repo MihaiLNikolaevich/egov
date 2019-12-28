@@ -1,0 +1,329 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background: #ffffff;
+  transition: .25s;
+  font-size: 18px;
+  line-height: 150%;
+
+  .menu{
+
+    height: 70px;
+  }
+  .menu__li {
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    width: 80px;
+    height: 30px;
+  }
+  .link{
+    text-transform: uppercase;
+  }
+
+  @at-root {
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      //height: 37px;
+    }
+
+    .btn-mob {
+      display: inline-flex;
+      position: relative;
+      right: -10px;
+    }
+    .mob-menu-bg{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 17, 60, 0.8);
+      visibility: hidden;
+      opacity: 0;
+      transition: .25s;
+      &.active{
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    .mob-menu {
+      position: fixed;
+      top: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      max-width: 400px;
+      height: 100vh;
+      //min-height: 100vh;
+      overflow-y: auto;
+      padding: 0 0 65px;
+      background: #fff;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .3s ease, transform .25s ease;
+      transform: translateX(100%);
+      z-index: 99;
+      &.active {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+
+        .mob-menu_nav {
+          margin: 10vh 40px;
+          li {
+            position: relative;
+            animation: fadeInRight .5s ease forwards;
+            animation-delay: .3s;
+
+            &:nth-child(2) {
+              animation-delay: .45s;
+            }
+
+            &:nth-child(3) {
+              animation-delay: .50s;
+            }
+
+            &:nth-child(4) {
+              animation-delay: .55s;
+            }
+
+            &:nth-child(5) {
+              animation-delay: .60s;
+            }
+
+            &:nth-child(6) {
+              animation-delay: .65s;
+            }
+
+            &:nth-child(7) {
+              animation-delay: .70s;
+            }
+
+            &:nth-child(8) {
+              animation-delay: .75s;
+            }
+          }
+        }
+
+        .meet_ul {
+          li {
+            position: relative;
+            animation: fadeInRight .5s ease forwards;
+            animation-delay: .6s;
+
+            &:nth-child(2) {
+              animation-delay: .65s;
+            }
+
+            &:nth-child(3) {
+              animation-delay: .7s;
+            }
+
+            &:nth-child(4) {
+              animation-delay: .75s;
+            }
+
+            &:nth-child(5) {
+              animation-delay: .8s;
+            }
+          }
+        }
+      }
+
+      .link {
+        display: inline-block;
+        margin-top: 4vh;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+      }
+
+      .af-link {
+        font-size: 16px;
+        margin: 0 0 3vh;
+      }
+    }
+
+    .mob-menu_nav {
+      display: block;
+      margin: auto 0;
+      padding: 25px 0;
+
+      ul {
+        height: 100%;
+      }
+
+      li {
+        opacity: 0;
+      }
+    }
+
+    .link {
+      color: #000000;
+    }
+
+    .dropdown {
+      position: relative;
+      font-size: 16px;
+      line-height: 22px;
+      color: #0047FF;
+      &.active {
+        .dropdown_menu {
+          visibility: visible;
+          opacity: 1;
+        }
+
+        .link {
+          color: #2684ff;
+        }
+
+        svg {
+          transform: rotate(-180deg);
+        }
+      }
+
+      li {
+        line-height: 34px;
+        transition: background .2s linear;
+        color: #1E1E1E;
+        font-weight: bold;
+
+        &:hover {
+          background: rgba(0, 0, 0, 0.04);
+        }
+      }
+    }
+
+    .dropdown_btn {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+      color: #0047FF;
+      transition: color .2s;
+
+      svg {
+        transition: .2s;
+        margin-left: 5px;
+      }
+
+      path {
+        transition: .2s;
+      }
+    }
+
+    .dropdown_menu {
+      background: #D7E4FF;
+      border-radius: 4px;
+      position: absolute;
+      top: calc(100% + 5px);
+      max-width: 280px;
+      right: 0;
+      transform: translateX(50%);
+      margin-right: 50%;
+      visibility: hidden;
+      opacity: 0;
+      box-shadow: -7px 8px 15px 0 rgba(0, 0, 0, .04);
+      overflow: hidden;
+      z-index: 1;
+      transition: opacity .2s linear;
+      min-width: 55px;
+    }
+
+    .dropdown__link {
+      display: inline-block;
+      padding: 5px 15px;
+      text-transform: capitalize;
+      color: inherit;
+    }
+
+  }
+  .btn {
+    font-size: 16px;
+    height: 44px;
+    line-height: normal;
+  }
+  hr{
+    margin: 5vh 25px 4vh;
+  }
+  .btn-tr {
+    padding: 10px;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-height: 450px) {
+  .header{
+    .menu {
+      height: 50px;
+    }
+  }
+
+}
+
+@media screen and (min-width: 768px) and (min-height: 450px) {
+  .header {
+    border-bottom: 1px solid rgba(175, 176, 179, 0.4);
+    .logo{
+      width: 116px;
+      height: 44px;
+    }
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  .header {
+    font-size: 16px;
+    .menu{
+      height: 80px;
+    }
+    .link{
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: -0.01em;
+    }
+    .menu__li-logo{
+      display: inline-block;
+      margin-right: auto;
+    }
+    .menu__li {
+      display: inline-flex;
+      margin-left: 3rem;
+      &:not(.dropdown){
+        align-items: center;
+        height: 100%;
+        &.active{
+          border-bottom: 3px solid #0047FF;
+          border-radius: 1px;
+        }
+      }
+
+    }
+
+  }
+  .btn-mob {
+    display: none;
+  }
+}

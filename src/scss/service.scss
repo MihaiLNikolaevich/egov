@@ -1,0 +1,70 @@
+.service {
+  &.wrap {
+    padding-top: 3.8rem;
+    padding-bottom: 0;
+  }
+
+  .cn__img {
+    border: 1px solid rgba(229, 237, 255, 0.5);
+    border-radius: 6px;
+    padding: 29px 20px;
+  }
+
+  p {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .service {
+    .cn__img {
+      float: right;
+      width: 20rem;
+      height: 14.3rem;
+      padding: 2.1rem 1.4rem;
+      margin: 0 0 20px 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .service {
+    &.wrap {
+      padding-top: 2.5rem;
+    }
+
+    h2.title {
+      font-size: 2rem;
+      line-height: 2.4rem;
+      font-weight: 900;
+      max-width: 770px;
+    }
+
+    p {
+      max-width: 700px;
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .service {
+    .cn {
+      position: relative;
+    }
+
+    .info {
+      width: 65%;
+    }
+
+    .cn__img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      float: none;
+      width: 400px;
+      height: 286px;
+      margin: 0;
+    }
+  }
+}

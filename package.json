@@ -1,0 +1,57 @@
+{
+  "name": "egov",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MihaiLNikolaevich/egov.git"
+  },
+  "author": "Michael Kutsyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MihaiLNikolaevich/egov/issues"
+  },
+  "homepage": "https://github.com/MihaiLNikolaevich/egov#readme",
+  "browserslist": [
+    "> 1%",
+    "last 8 version",
+    "not ie < 11"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "autoprefixer": "^9.6.4",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^6.0.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "terser-webpack-plugin": "latest",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.6.0",
+    "load-google-maps-api": "^2.0.1",
+    "normalize.css": "^8.0.1",
+    "owl.carousel": "^2.3.4",
+    "plyr": "^3.5.6",
+    "whatwg-fetch": "^3.0.0"
+  }
+}

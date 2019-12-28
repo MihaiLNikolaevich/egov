@@ -1,0 +1,53 @@
+.subscribe {
+  &.wrap {
+    padding-bottom: 2.5rem;
+  }
+
+  form {
+    margin: 30px auto 0;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 10px auto 0;
+  }
+
+  .ico {
+    margin-left: 25px;
+  }
+}
+
+@media screen and (min-width: 730px) {
+  .subscribe {
+    &.wrap {
+      padding-bottom: 4rem;
+    }
+
+    form {
+      margin-top: 2rem;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .btn {
+      width: 200px;
+      margin: 0 0 0 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .subscribe {
+    text-align: center;
+
+    form {
+      justify-content: center;
+    }
+
+    input {
+      width: 350px;
+    }
+  }
+}

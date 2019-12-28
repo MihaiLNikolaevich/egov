@@ -1,0 +1,79 @@
+.map{
+  position: relative;
+  @at-root {
+    .map__contacts{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: rgba(0, 71, 255, 0.84);
+      color: #ffffff;
+      &.wrap{
+        padding-top: 20px;
+        padding-bottom: 35px;
+      }
+    }
+    .map__address{
+      margin-bottom: 30px;
+    }
+    .map__title{
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 10px;
+    }
+    .map__link{
+      color: #fff;
+      //line-height: 28px;
+    }
+    #map {
+      position: relative;
+      width: 100vw;
+      height: 500px;
+      .gmnoprint {
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 600px) {
+  .map__contacts{
+    max-width: 450px;
+    right: auto;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 922px) {
+  .map__contacts {
+    font-size: 16px;
+    top: ((450-290)/2)+px;
+    left: $glob-desktop_wrap__padding;
+    width: 250px;
+    height: 290px;
+    border-radius: 10px;
+    &.wrap{
+      padding-top: 2.5rem;
+      padding-bottom: 2.7rem;
+    }
+  }
+
+  #map{
+    height: 450px;
+    .gm-style-pbt{
+      width: 400px;
+      margin: 0 auto;
+    }
+  }
+}
+@media screen and (min-width: 1200px){
+  .map__contacts {
+    left: calc(50% - 600px);
+  }
+}
+

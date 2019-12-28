@@ -1,0 +1,116 @@
+$line__color: #D2D2D2;
+.how-we-work-card{
+  background: linear-gradient(261.81deg, rgba(153, 170, 255, 0.16) 4.21%, rgba(26, 45, 255, 0.16) 90.12%);
+
+  h2.title{
+    margin-bottom: 25px;
+  }
+  @at-root {
+    .plyr{
+      margin-bottom: 20px;
+      height: 53vw;
+      max-height: 479px;
+    }
+    .plyr__control--overlaid{
+      background: rgba(255, 255, 255, 0.8);
+      color: #0057FF;
+    }
+    .plyr--video{
+      background: transparent;
+      border-radius: 10px;
+    }
+    .plyr__video-wrapper{
+      background: transparent;
+    }
+    .plyr--video .plyr__control.plyr__tab-focus, .plyr--video .plyr__control:hover, .plyr--video .plyr__control[aria-expanded='true']{
+      background: #0057FF;
+    }
+    .plyr--full-ui input[type='range']{
+      color: #0057FF;
+    }
+    .plyr__control.plyr__tab-focus {
+      box-shadow: 0 0 0 5px rgba(0, 87, 255, 0.5);
+      outline: 0;
+    }
+  }
+}
+
+.how-we-work{
+  font-size: 12px;
+  line-height: 150%;
+  .gall{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  .gall__it {
+    padding: 20px 25px 20px 20px;
+    border: 1px solid #C4C4C4;
+    border-radius: 4px;
+  }
+  strong{
+    display: block;
+    margin-bottom: 1.5rem;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .how-we-work{
+    font-size: 14px;
+    .gall{
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1.5rem;
+    }
+    .gall__it {
+      padding: 1.5rem;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .how-we-work-card{
+    &.wrap{
+      padding-top: 2.75rem;
+      padding-bottom: 2.75rem;
+    }
+    .cn{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .content{
+      order: 1;
+      width: 47%;
+      max-width: 570px;
+    }
+    .content-video{
+      width: 48%;
+      order: 2;
+      max-height: 325px;
+    }
+    p{
+      max-width: 90%;
+    }
+    .plyr {
+      height: 100%;
+      margin-bottom: 0;
+    }
+  }
+  .plyr__control--overlaid{
+    padding: 2rem;
+    svg{
+      transform: scale(1.5);
+    }
+  }
+
+  .how-we-work{
+    h2.title{
+      margin-bottom: 30px;
+    }
+    .gall{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
