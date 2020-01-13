@@ -1,7 +1,7 @@
-.map{
+.map {
   position: relative;
   @at-root {
-    .map__contacts{
+    .map__contacts {
       position: absolute;
       top: 0;
       left: 0;
@@ -11,28 +11,34 @@
       justify-content: space-between;
       background: rgba(0, 71, 255, 0.84);
       color: #ffffff;
-      &.wrap{
+
+      &.wrap {
         padding-top: 20px;
         padding-bottom: 35px;
       }
     }
-    .map__address{
+
+    .map__address {
       margin-bottom: 30px;
     }
-    .map__title{
+
+    .map__title {
       font-weight: bold;
       font-size: 18px;
       line-height: 22px;
       margin-bottom: 10px;
     }
-    .map__link{
+
+    .map__link {
       color: #fff;
       //line-height: 28px;
     }
+
     #map {
       position: relative;
       width: 100vw;
       height: 500px;
+
       .gmnoprint {
         display: none;
       }
@@ -42,7 +48,7 @@
 
 
 @media screen and (min-width: 600px) {
-  .map__contacts{
+  .map__contacts {
     max-width: 450px;
     right: auto;
     border-bottom-right-radius: 10px;
@@ -57,21 +63,24 @@
     width: 250px;
     height: 290px;
     border-radius: 10px;
-    &.wrap{
+
+    &.wrap {
       padding-top: 2.5rem;
       padding-bottom: 2.7rem;
     }
   }
 
-  #map{
+  #map {
     height: 450px;
-    .gm-style-pbt{
+
+    .gm-style-pbt {
       width: 400px;
       margin: 0 auto;
     }
   }
 }
-@media screen and (min-width: 1200px){
+
+@media screen and (min-width: 1200px) {
   .map__contacts {
     left: calc(50% - 600px);
   }

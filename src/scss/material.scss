@@ -1,11 +1,13 @@
-.material{
+.material {
   background: rgba(244, 244, 244, 0.6);
   font-size: 20px;
   line-height: 130%;
-  h2.title{
+
+  h2.title {
     margin-bottom: 3rem;
   }
-  .cn__img{
+
+  .cn__img {
     overflow: hidden;
     background: #C4C4C4;
     border-radius: 6px;
@@ -14,21 +16,25 @@
     height: 50vw;
     max-height: 180px;
   }
-  .img{
+
+  .img {
     object-fit: cover;
   }
-  .btn{
+
+  .btn {
     min-width: auto;
     width: 150px;
     height: 44px;
     font-weight: normal;
     font-size: 18px;
   }
-  figcaption{
+
+  figcaption {
     margin: 20px 0;
   }
+
   @at-root {
-    .material__gall{
+    .material__gall {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
       grid-gap: 40px;
@@ -37,17 +43,18 @@
 }
 
 @media screen and (min-width: 992px) {
-  .material{
-    &.wrap{
+  .material {
+    &.wrap {
       padding-bottom: 3.5rem;
     }
   }
-  .material__gall{
+  .material__gall {
     grid-gap: 4rem;
   }
 }
+
 @media screen and (min-width: 1240px) {
-  .material__gall{
+  .material__gall {
     grid-gap: 6rem;
   }
 }

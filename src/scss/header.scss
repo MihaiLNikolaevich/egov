@@ -8,10 +8,11 @@
   font-size: 18px;
   line-height: 150%;
 
-  .menu{
+  .menu {
 
     height: 70px;
   }
+
   .menu__li {
     display: none;
   }
@@ -21,7 +22,8 @@
     width: 80px;
     height: 30px;
   }
-  .link{
+
+  .link {
     text-transform: uppercase;
   }
 
@@ -38,7 +40,8 @@
       position: relative;
       right: -10px;
     }
-    .mob-menu-bg{
+
+    .mob-menu-bg {
       position: fixed;
       top: 0;
       left: 0;
@@ -48,11 +51,13 @@
       visibility: hidden;
       opacity: 0;
       transition: .25s;
-      &.active{
+
+      &.active {
         opacity: 1;
         visibility: visible;
       }
     }
+
     .mob-menu {
       position: fixed;
       top: 0;
@@ -71,6 +76,7 @@
       transition: opacity .3s ease, transform .25s ease;
       transform: translateX(100%);
       z-index: 99;
+
       &.active {
         transform: translateX(0);
         opacity: 1;
@@ -78,6 +84,7 @@
 
         .mob-menu_nav {
           margin: 10vh 40px;
+
           li {
             position: relative;
             animation: fadeInRight .5s ease forwards;
@@ -176,6 +183,7 @@
       font-size: 16px;
       line-height: 22px;
       color: #0047FF;
+
       &.active {
         .dropdown_menu {
           visibility: visible;
@@ -253,9 +261,11 @@
     height: 44px;
     line-height: normal;
   }
-  hr{
+
+  hr {
     margin: 5vh 25px 4vh;
   }
+
   .btn-tr {
     padding: 10px;
   }
@@ -273,7 +283,7 @@
 }
 
 @media screen and (orientation: landscape) and (max-height: 450px) {
-  .header{
+  .header {
     .menu {
       height: 50px;
     }
@@ -284,7 +294,8 @@
 @media screen and (min-width: 768px) and (min-height: 450px) {
   .header {
     border-bottom: 1px solid rgba(175, 176, 179, 0.4);
-    .logo{
+
+    .logo {
       width: 116px;
       height: 44px;
     }
@@ -295,26 +306,32 @@
 @media screen and (min-width: 992px) {
   .header {
     font-size: 16px;
-    .menu{
+
+    .menu {
       height: 80px;
     }
-    .link{
+
+    .link {
       font-weight: 500;
       font-size: 15px;
       line-height: 18px;
       letter-spacing: -0.01em;
     }
-    .menu__li-logo{
+
+    .menu__li-logo {
       display: inline-block;
       margin-right: auto;
     }
+
     .menu__li {
       display: inline-flex;
       margin-left: 3rem;
-      &:not(.dropdown){
+
+      &:not(.dropdown) {
         align-items: center;
         height: 100%;
-        &.active{
+
+        &.active {
           border-bottom: 3px solid #0047FF;
           border-radius: 1px;
         }

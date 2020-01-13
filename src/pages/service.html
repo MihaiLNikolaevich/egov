@@ -15,17 +15,35 @@
 </head>
 <body>
   <header class="wrap header">
-    <nav class="cn">
+  <nav class="cn">
+    <ul class="menu">
+      <li class="menu__li-logo"><a href="./" class="logo"><img class="img" src="../img/logo.svg" alt="egov"></a></li>
+
+      <li class="menu__li active"><a href="./" class="link">Главная</a></li>
+      <li class="menu__li"><a href="regions.html" class="link">Регионы</a></li>
+      <li class="menu__li"><a href="about.html " class="link">О нас</a></li>
+      <li class="menu__li"><a href="services.html" class="link">Сервисы</a></li>
+      <li class="menu__li"><a href="e-gov_laws.html" class="link">E Gov законы</a></li>
+
+      <li class="menu__li dropdown">
+        <button type="button" class="btn-tr dropdown_btn">Ru<svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.83893 0.288724L6.00537 4.11864L10.1718 0.288724C10.5906 -0.0962415 11.2671 -0.0962415 11.6859 0.288724C12.1047 0.67369 12.1047 1.29556 11.6859 1.68052L6.75705 6.21128C6.33825 6.59624 5.66174 6.59624 5.24295 6.21128L0.314094 1.68052C-0.104697 1.29556 -0.104697 0.67369 0.314095 0.288724C0.732886 -0.086371 1.42013 -0.0962419 1.83893 0.288724Z" fill="#0047FF"/></svg></button>
+        <div class="dropdown_menu">
+          <ul>
+            <li><a href="#" class="dropdown__link">en</a></li>
+            <li><a href="#" class="dropdown__link">ua</a></li>
+            <li><a href="#" class="dropdown__link">ru</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li><button type="button" class="btn-tr btn-mob open"><svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1 0C0.447708 0 0 0.447716 0 1C0 1.55228 0.447723 2 1 2H29C29.5523 2 30 1.55228 30 1C30 0.447716 29.5523 0 29 0H1ZM0 8C0 7.44772 0.447708 7 1 7H29C29.5523 7 30 7.44772 30 8C30 8.55228 29.5523 9 29 9H1C0.447723 9 0 8.55228 0 8ZM0 15C0 14.4477 0.447708 14 1 14H29C29.5523 14 30 14.4477 30 15C30 15.5523 29.5523 16 29 16H1C0.447723 16 0 15.5523 0 15Z" fill="#1E1E1E"/></svg></button></li>
+    </ul>
+  </nav>
+
+  <nav class="mob-menu">
+    <div class="wrap">
       <ul class="menu">
-        <li class="menu__li-logo"><a href="./" class="logo"><img class="img" src="../img/logo.svg" alt="egov"></a></li>
-
-        <li class="menu__li active"><a href="./" class="link">Главная</a></li>
-        <li class="menu__li"><a href="regions.html" class="link">Регионы</a></li>
-        <li class="menu__li"><a href="about.html " class="link">О нас</a></li>
-        <li class="menu__li"><a href="service.html" class="link">Сервисы</a></li>
-        <li class="menu__li"><a href="contact_us.html" class="link">E Gov законы</a></li>
-
-        <li class="menu__li dropdown">
+        <li class="dropdown">
           <button type="button" class="btn-tr dropdown_btn">Ru<svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.83893 0.288724L6.00537 4.11864L10.1718 0.288724C10.5906 -0.0962415 11.2671 -0.0962415 11.6859 0.288724C12.1047 0.67369 12.1047 1.29556 11.6859 1.68052L6.75705 6.21128C6.33825 6.59624 5.66174 6.59624 5.24295 6.21128L0.314094 1.68052C-0.104697 1.29556 -0.104697 0.67369 0.314095 0.288724C0.732886 -0.086371 1.42013 -0.0962419 1.83893 0.288724Z" fill="#0047FF"/></svg></button>
           <div class="dropdown_menu">
             <ul>
@@ -35,42 +53,25 @@
             </ul>
           </div>
         </li>
-
-        <li><button type="button" class="btn-tr btn-mob open"><svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1 0C0.447708 0 0 0.447716 0 1C0 1.55228 0.447723 2 1 2H29C29.5523 2 30 1.55228 30 1C30 0.447716 29.5523 0 29 0H1ZM0 8C0 7.44772 0.447708 7 1 7H29C29.5523 7 30 7.44772 30 8C30 8.55228 29.5523 9 29 9H1C0.447723 9 0 8.55228 0 8ZM0 15C0 14.4477 0.447708 14 1 14H29C29.5523 14 30 14.4477 30 15C30 15.5523 29.5523 16 29 16H1C0.447723 16 0 15.5523 0 15Z" fill="#1E1E1E"/></svg></button></li>
+        <li><button class="btn-tr btn-mob close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.686523" y="21.8997" width="30" height="2" rx="1" transform="rotate(-45 0.686523 21.8997)" fill="black"/><rect x="2.59082" y="0.686279" width="30" height="2" rx="1" transform="rotate(45 2.59082 0.686279)" fill="black"/></svg></button></li>
       </ul>
-    </nav>
+    </div>
 
-    <nav class="mob-menu">
-      <div class="wrap">
-        <ul class="menu">
-          <li class="dropdown">
-            <button type="button" class="btn-tr dropdown_btn">Ru<svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.83893 0.288724L6.00537 4.11864L10.1718 0.288724C10.5906 -0.0962415 11.2671 -0.0962415 11.6859 0.288724C12.1047 0.67369 12.1047 1.29556 11.6859 1.68052L6.75705 6.21128C6.33825 6.59624 5.66174 6.59624 5.24295 6.21128L0.314094 1.68052C-0.104697 1.29556 -0.104697 0.67369 0.314095 0.288724C0.732886 -0.086371 1.42013 -0.0962419 1.83893 0.288724Z" fill="#0047FF"/></svg></button>
-            <div class="dropdown_menu">
-              <ul>
-                <li><a href="#" class="dropdown__link">en</a></li>
-                <li><a href="#" class="dropdown__link">ua</a></li>
-                <li><a href="#" class="dropdown__link">ru</a></li>
-              </ul>
-            </div>
-          </li>
-          <li><button class="btn-tr btn-mob close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.686523" y="21.8997" width="30" height="2" rx="1" transform="rotate(-45 0.686523 21.8997)" fill="black"/><rect x="2.59082" y="0.686279" width="30" height="2" rx="1" transform="rotate(45 2.59082 0.686279)" fill="black"/></svg></button></li>
-        </ul>
-      </div>
+    <div class="mob-menu_nav">
+      <ul>
+        <li><a href="regions.html" class="link">регионы</a></li>
 
-      <div class="mob-menu_nav">
-        <ul>
-          <li><a href="regions.html" class="link">регионы</a></li>
+        <li><a href="about.html" class="link">о нас</a></li>
 
-          <li><a href="partners.html" class="link">о нас</a></li>
+        <li><a href="services.html" class="link">сервисы</a></li>
 
-          <li><a href="about.html" class="link">сервисы</a></li>
+        <li><a href="e-gov_laws.html" class="link">E Gov законы</a></li>
 
-          <li><a href="contact_us.html" class="link">E Gov законы</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
-        </ul>
-      </div>
-    </nav>
-  </header>
 
   <div class="wrap breadcrumbs">
     <nav class="cn">
@@ -86,12 +87,10 @@
     </nav>
   </div>
 
-
-
   <section class="wrap service">
     <div class="cn">
       <div class="info">
-        <h2 class="title">Система здійснення декларативних процедур у будівництві</h2>
+        <h1 class="title">Система здійснення декларативних процедур у будівництві</h1>
         <figure class="cn__img">
           <img class="img" src="../img/select-service.svg" alt="">
         </figure>
@@ -151,9 +150,9 @@
             <ul>
               <li><a class="link" href="./">Главная</a></li>
               <li><a class="link" href="regions.html">Регионы</a></li>
-              <li><a class="link" href="#">О нас</a></li>
-              <li><a class="link" href="service.html">Сервисы</a></li>
-              <li><a class="link" href="#">E Gov законы</a></li>
+              <li><a class="link" href="about.html">О нас</a></li>
+              <li><a class="link" href="services.html">Сервисы</a></li>
+              <li><a class="link" href="e-gov_laws.html">E Gov законы</a></li>
             </ul>
           </div>
 
@@ -162,9 +161,9 @@
             <ul>
               <li><a class="link" href="./">Главная</a></li>
               <li><a class="link" href="regions.html">Регионы</a></li>
-              <li><a class="link" href="#">О нас</a></li>
-              <li><a class="link" href="service.html">Сервисы</a></li>
-              <li><a class="link" href="#">E Gov законы</a></li>
+              <li><a class="link" href="about.html">О нас</a></li>
+              <li><a class="link" href="services.html">Сервисы</a></li>
+              <li><a class="link" href="e-gov_laws.html">E Gov законы</a></li>
             </ul>
           </div>
 
@@ -183,5 +182,44 @@
       <div class="copy">© Copyright 2019</div>
     </div>
   </footer>
+
+  <div class="modal post-message">
+    <div class="cn">
+      <button class="btn-tr modal-close"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32.5731" height="3.25731" rx="1.62866" transform="matrix(0.706822 0.707391 -0.706822 0.707391 2.91797 0.0770264)" fill="#333333"/><rect width="32.5731" height="3.25731" rx="1.62866" transform="matrix(-0.706822 0.707391 -0.706822 -0.707391 25.9414 2.38123)" fill="#333333"/></svg></button>
+
+      <form action="#" method="post" class="wrap">
+        <strong>Наш менеджер поможет Вам</strong>
+        <label class="req">
+          <span>Ваш телефон</span>
+          <input type="tel" name="phone" placeholder="095 00 00 000" required>
+        </label>
+        <label class="req">
+          <span>Ваш E-mail</span>
+          <input type="email" name="email" placeholder="example@email.com" required>
+        </label>
+        <label class="req">
+          <span>Ваше Сообщение</span>
+          <textarea type="text" name="message"></textarea>
+        </label>
+        <button type="submit" class="btn blue">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <div class="modal sent">
+    <div class="cn">
+      <div class="ico"><svg width="44" height="31" viewBox="0 0 44 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M42.7992 1L17.1992 29.8L1.19922 17" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <strong>Спасибо! Сообщение отправлено</strong>
+      <p>Мы свяжемся с Вами в течение часа. Обращения обрабатываются с 10 до 18 с понедельника по пятницу</p>
+      <a href="./" class="btn blue">Перейти на главную</a>
+    </div>
+  </div>
+  <div class="modal sent error">
+    <div class="cn">
+      <div class="ico"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32.5731" height="3.25731" rx="1.62866" transform="matrix(0.706822 0.707391 -0.706822 0.707391 2.91797 0.0770264)" fill="#FFFFFF"/><rect width="32.5731" height="3.25731" rx="1.62866" transform="matrix(-0.706822 0.707391 -0.706822 -0.707391 25.9414 2.38123)" fill="#FFFFFF"/></svg></div>
+      <strong>Ошыбка! Что-то пошло не так.</strong>
+      <p> Сообщение не отправлено!</p>
+      <button class="btn black modal-close">Закрыть</button>
+    </div>
+  </div>
 </body>
 </html>

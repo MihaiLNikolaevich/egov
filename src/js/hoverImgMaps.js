@@ -1,4 +1,4 @@
-export default class HoverMaps {
+export default class HoverImgMaps {
 
   constructor(selectorLink, selectorMaps){
     this.cnLink = document.querySelector(selectorLink);

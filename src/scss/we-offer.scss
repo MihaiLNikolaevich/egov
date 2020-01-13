@@ -1,40 +1,48 @@
-.we-offer{
+.we-offer {
   font-size: 14px;
   line-height: 150%;
-  &.wrap{
+
+  &.wrap {
     padding-bottom: 0;
   }
-  li{
-    &:nth-of-type(2){
-      .we-offer__link{
+
+  li {
+    &:nth-of-type(2) {
+      .we-offer__link {
         background: #F0F2FF;
-        &:hover{
+
+        &:hover {
           background: #E9EBFE;
         }
       }
     }
-    &:nth-of-type(3){
-      .we-offer__link{
+
+    &:nth-of-type(3) {
+      .we-offer__link {
         background: #FAFCFF;
-        &:hover{
+
+        &:hover {
           background: #F4F8FF;
         }
       }
     }
   }
+
   @at-root {
-    .we-offer__link{
+    .we-offer__link {
       display: block;
       min-height: 182px;
       color: #1E1E1E;
       background: #EBEBFF;
       padding: 30px 20px 20px;
       transition: .25s ease-in-out;
-      &:hover{
+
+      &:hover {
         background: #E3E3FF;
       }
     }
-    .we-offer__title{
+
+    .we-offer__title {
       font-weight: bold;
       font-size: 26px;
       line-height: 22px;
@@ -43,32 +51,37 @@
     }
   }
 }
-@media screen  and (min-width: 768px){
-  .we-offer{
+
+@media screen and (min-width: 768px) {
+  .we-offer {
     font-size: initial;
   }
 }
-@media screen  and (min-width: 992px) {
-  .we-offer{
+
+@media screen and (min-width: 992px) {
+  .we-offer {
     margin-bottom: -1.5rem;
-    ul{
+
+    ul {
       display: flex;
     }
-    li{
+
+    li {
       width: 100%;
     }
   }
-  .we-offer__link{
+  .we-offer__link {
     padding: 2rem 3rem 2rem 2rem;
     min-height: 230px;
   }
-  .we-offer__title{
+  .we-offer__title {
     margin-bottom: .9rem;
     font-size: 1.8rem;
   }
 }
-@media screen  and (min-width: 1250px) {
-  .we-offer{
+
+@media screen and (min-width: 1250px) {
+  .we-offer {
     font-size: 20px;
     line-height: 26px;
   }

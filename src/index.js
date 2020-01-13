@@ -1,16 +1,22 @@
 import "@babel/polyfill";
-// import "whatwg-fetch";
+import "whatwg-fetch";
 import Plyr from 'plyr';
-import { dropdown, Menu, sizeHead } from './js/mobile-menu';
+
+
 import tabs from './js/tab';
-import select from './js/select';
-import selectImg from "./js/select-img";
+
 import Modal from "./js/modal";
-import { initForm } from "./js/form";
+
+import {formDropdown, initForm} from "./js/form";
+
+import { dropdown, Menu, sizeHead } from './js/mobile-menu';
+import { createAccordion } from "./js/accordion";
+import HoverImgMaps from "./js/hoverImgMaps";
+import "./js/anchorLink";
 import { Map } from './js/maps';
-import "./js/accordion";
+
 import './scss/index.scss';
-import HoverMaps from "./js/hoverMaps";
+import column from "./js/buildColumn";
 
 if (process.env.NODE_ENV !== 'production') {
     console.log('Looks like we are in development mode!');
@@ -19,105 +25,58 @@ if (process.env.NODE_ENV !== 'production') {
 document.addEventListener("DOMContentLoaded", function() {
 
     new Menu('.btn-mob.open', '.mob-menu');
-
-    new Plyr('#player');
-
-    new HoverMaps('.regions__gall', '.regions .cn__img');
-
-    initMap().catch( err => console.log('map', err));
-
-    sizeHead();
-
     dropdown();
+    new Plyr('#player');
+    new HoverImgMaps('.regions__gall', '.regions .cn__img');
+    initSelectedMapRegion();
+    sizeHead();
+    createAccordion();
+    createAccordion('.select-accordion__header', '.select-accordion__content', 'data-hash', false);
 
     initForm();
+    formDropdown();
 
-    selectImg('.img-prod', '.cn__img-edit');
+    initModalMessage();
 
-    tabs('.tabs','.gall_prod');
+    tabs('.cn__select-link','.accordion-tabs');
 
-    select('select');
+    column();
+    column('.accordion-tabs', 'accordion-tabs__it', 2);
 
 
-    let modalSaveTime = document.querySelector('.modal.save-time');
-    const btnSaveTime = document.querySelectorAll('.reqCall');
-
-    if (modalSaveTime && btnSaveTime.length != 0) {
-        modalSaveTime = new Modal(modalSaveTime);
-
-        for (const btn of btnSaveTime) {
-            btn.addEventListener('click', () => {
-                modalSaveTime.on()
-            }, { passive: true, capture: false })
-        }
-
-        modalSaveTime.el.querySelector('form')
-            .addEventListener('submit', () => {
-                modalSaveTime.off()
-            }, { passive: true, capture: false })
-    }
-
-    //anchor
-    document.querySelectorAll('.anchor').forEach((el) => {
-
-        el.addEventListener('click', (ev) => {
-            ev.preventDefault();
-
-            const anchor = ev.target.getAttribute('href').replace(/#/, '');
-
-            document.getElementById(anchor).scrollIntoView({ behavior: "smooth" })
-
-        }, { capture: false })
-
-    });
-    // end anchor
-
-    function accordion(emitSelector, targetSelector) {
-        const tg = document.querySelector(emitSelector);
-        if (!tg) return;
-
-        tg.addEventListener('click', () => {
-            document.querySelector(targetSelector).classList.toggle('active');
-        }, { passive: true, capture: false })
-    }
-    accordion('.btnTextarea', '.cn_textarea')
-    column()
+    initMap().catch( err => console.log('map', err));
 });
 
-function column() {
+function initSelectedMapRegion() {
+    const selectedMapRegion = document.querySelector('.img[data-region-active]');
+    if (!selectedMapRegion) return;
 
-    const container = document.querySelector('.agent__cn');
-    const list = document.querySelectorAll('.agent__gall li');
+    const value = selectedMapRegion.getAttribute('data-region-active');
+    const target = selectedMapRegion.querySelector(`[data-region="${value}"]`);
 
-    function newEl(tag ='ul', classname = 'agent__gall') {
-        const ul = document.createElement(tag);
-        ul.className = classname;
-        return ul;
-    }
+    if (!target) return;
 
-    let ul = newEl();
+    target.classList.add('active');
+}
 
-    const column = window.innerWidth < 450
-      ? 1 : window.innerWidth < 800
-        ? 2 : window.innerWidth < 1100 ? 3 : 4;
-    const count = Math.ceil(list.length / column);
-    let countIter = count;
-    let columnIter = 1;
+function initModalMessage() {
 
-    for (let i = 0; i < list.length; i++) {
-        if (countIter > i) {
-            ul.append(list[i]);
-            if (countIter - 1 === i || i === list.length - 1) {
-                container.append(ul);
-                columnIter++;
-                countIter = count * columnIter;
-                ul = newEl();
-            }
+    let modalMessage = document.querySelector('.modal.post-message');
+    const btnMessage = document.querySelectorAll('.reqMessage');
+
+    if (modalMessage && btnMessage.length != 0) {
+        modalMessage = new Modal(modalMessage);
+
+        for (const btn of btnMessage) {
+            btn.addEventListener('click', () => {
+                modalMessage.on()
+            }, { passive: true, capture: false })
         }
-    }
 
-    for (const ul of document.querySelectorAll('.agent__gall')) {
-        if (!ul.children.length) ul.remove();
+        modalMessage.el.querySelector('form')
+            .addEventListener('submit', () => {
+                modalMessage.off()
+            }, { passive: true, capture: false })
     }
 }
 
@@ -126,6 +85,8 @@ async function initMap() {
     if(!mapElement) return;
 
     const googleMaps = await Map.loadGoogleMapsApi();
+
+    create(mapElement);
 
     function create(target) {
         const coordinates = {
@@ -136,10 +97,8 @@ async function initMap() {
         Map.createMap( googleMaps, mapElement, coordinates);
     }
 
-    create(mapElement);
-
     document.querySelector('.map__address .map__link').onclick = function (ev) {
         ev.preventDefault();
         create(this)
-    }
+    };
 }

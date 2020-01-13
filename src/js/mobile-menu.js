@@ -70,7 +70,7 @@ export function overflow(value) {
     document.body.style.overflow = value || '';
 }
 
-export function dropdown(selector = '.dropdown', btnSelector = '.dropdown_btn') {
+export function dropdown(selector = '.dropdown', selectorTrigger = '.dropdown_btn') {
     const elements = document.querySelectorAll(selector);
 
     if(!elements.length) return;
@@ -80,22 +80,27 @@ export function dropdown(selector = '.dropdown', btnSelector = '.dropdown_btn') 
         this.parentElement.classList.toggle('active');
 
         setTimeout(function () {
-            document.body.addEventListener('click', clear, { capture: false, passive: true });
+            document.body
+              .addEventListener('click', clear, { capture: false, passive: true });
         }, 0);
     };
 
-    elements.forEach((element) => {
-        element.querySelector(btnSelector).addEventListener('click', toggle, { capture: false, passive: true });
+    elements.forEach(element => {
+        const trigger = element.querySelector(selectorTrigger);
+        if (trigger) {
+            trigger.addEventListener('click', toggle, { capture: false, passive: true });
+        }
     });
 
 
     function clear() {
-        elements.forEach((element) => {
-            element.classList.remove('active');
-        });
-        document.body.removeEventListener('click', clear, { capture: false })
+        elements.forEach(element => element.classList.remove('active'));
+
+        document.body
+          .removeEventListener('click', clear, { capture: false })
     }
 }
+
 
 export function searchTarget({ fn = function () {}, bubbling = 'parentElement', targets = ['A', 'BUTTON'] }) {
     return function search(ev) {

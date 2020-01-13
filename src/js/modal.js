@@ -28,7 +28,7 @@ export default class Modal {
 
         elBg.onclick = this.off.bind(this);
 
-        let btnClose = document.querySelector( '.modal-close' );
+        let btnClose = this.el.querySelector( '.modal-close' );
         if (btnClose) btnClose.onclick = this.off.bind(this);
     }
 

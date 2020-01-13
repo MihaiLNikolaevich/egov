@@ -19,6 +19,9 @@
   }
 
   @at-root {
+    .regions__cn{
+      margin-top: 2rem;
+    }
     .regions__it {
       display: flex;
       align-items: center;
@@ -42,22 +45,24 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 0 25px;
   }
-  .regions{
-    &.wrap{
+  .regions {
+    &.wrap {
       padding-top: 2rem;
     }
   }
 }
+
 @media screen and (max-width: 992px) {
   .select-map__it {
-    &[data-region]{
+    &[data-region] {
       fill: #0047FF;
     }
   }
 }
+
 @media screen and (min-width: 992px) {
-  .regions{
-    .cn__img{
+  .regions {
+    .cn__img {
       margin: 0;
     }
   }
@@ -67,19 +72,20 @@
     grid-gap: 0 .5rem;
     margin-top: 2.25rem;
   }
-  .regions__gall{
+  .regions__gall {
     grid-gap: 10px 2rem;
     grid-template-columns: 1fr .8fr;
   }
-  .regions__it{
+  .regions__it {
     min-height: 30px;
     border: none;
   }
-  .regions__link{
+  .regions__link {
     padding: 0;
     position: relative;
     transition: .2s;
-    &:before{
+
+    &:before {
       content: '';
       position: absolute;
       left: 0;
@@ -89,16 +95,18 @@
       background: #0047FF;
       transition: .2s;
     }
+
     &:hover,
     &.active {
       color: #0047FF;
       padding-left: 18px;
-      &:before{
+
+      &:before {
         width: 2px;
       }
     }
   }
-  .select__map-select{
+  .select__map-select {
     pointer-events: none;
     display: block;
     position: absolute;
@@ -117,21 +125,23 @@
     opacity: 0;
     visibility: hidden;
     filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3));
-    &.active{
+
+    &.active {
       visibility: visible;
       opacity: 1;
     }
   }
-  .select-map__it{
+  .select-map__it {
     cursor: pointer;
     transition: .2s;
+
     &:hover,
-    &.active{
+    &.active {
       fill: #0047FF;
     }
   }
-  .regions{
-    .cn__img{
+  .regions {
+    .cn__img {
       order: 1;
     }
   }

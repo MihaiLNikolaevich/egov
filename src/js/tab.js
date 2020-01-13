@@ -1,34 +1,44 @@
-export default function tabs(tabsSelector, elSelector) {
-    const tabsBtn = document.querySelector(tabsSelector);
+export default function tabs(selectorContainerTrigger, selectorTarget) {
+    const tabsBtn = document.querySelector(selectorContainerTrigger);
     if (!tabsBtn) return;
 
-    setTabs(tabsBtn.firstElementChild.firstElementChild);
-
-    tabsBtn.addEventListener('click', function(ev) {
-        ev.preventDefault();
-
+    tabsBtn.onclick = function(ev) {
+        // ev.preventDefault();
         let target = ev.target;
 
         while(target != this){
-
             if (target.tagName == 'A') return setTabs(target);
 
             target = target.parentElement;
         }
-    }, { capture: false, passive: false });
+        return false;
+    };
+
+    const hash = window.location.hash;
+    const selectedDefault = tabsBtn.querySelector('a');
 
     function setTabs(el) {
         if (!el.hasAttribute('href')) return;
+        const attr = el.getAttribute('href');
 
-        document.querySelectorAll('.'+el.className).forEach((elem) => {
+        tabsBtn.querySelectorAll('.'+el.className).forEach((elem) => {
             if (el != elem) elem.classList.remove('active');
         });
         el.classList.add('active');
 
-        let attr = el.getAttribute('href').replace(/#/, '');
-
-        document.querySelectorAll(elSelector).forEach((el) => {
-            el.style.display = (el.getAttribute('data-tab') == attr) ? '' : 'none';
+        document.querySelectorAll(selectorTarget).forEach((target) => {
+            target.style.display = (target.getAttribute('data-hash') == attr) ? '' : 'none';
         })
     }
+
+    if (hash) {
+        const selected = tabsBtn.querySelector(`a[href="${hash}"]`);
+
+        if (selected) {
+            setTabs(selected);
+            return;
+        }
+    }
+
+    if (selectedDefault) setTabs(selectedDefault);
 }
