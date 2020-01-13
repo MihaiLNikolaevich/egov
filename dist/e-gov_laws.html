@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="robots" content="none">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>egov</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <style>body{-webkit-animation:start .65s;-moz-animation:start .65s;-ms-animation:start .65s;animation:start .65s}@-webkit-keyframes start{from{visibility:hidden;opacity:0}to{visibility:visible;opacity:1}}@-moz-keyframes start{from{visibility:hidden;opacity:0}to{visibility:visible;opacity:1}}@-ms-keyframes start{from{visibility:hidden;opacity:0}to{visibility:visible;opacity:1}}@-o-keyframes start{from{visibility:hidden;opacity:0}to{visibility:visible;opacity:1}}@keyframes start{from{visibility:hidden;opacity:0}to{visibility:visible;opacity:1}}</style>
+<link href="src/css/app.0c16d259b95a69e2ac7f.css" rel="stylesheet"></head>
+<body>
+  <header class="wrap header">
+  <nav class="cn">
+    <ul class="menu">
+      <li class="menu__li-logo"><a href="./" class="logo"><img class="img" src="src/img/logo.svg" alt="egov"></a></li>
+
+      <li class="menu__li"><a href="./" class="link">Главная</a></li>
+      <li class="menu__li"><a href="regions.html" class="link">Регионы</a></li>
+      <li class="menu__li"><a href="about.html " class="link">О нас</a></li>
+      <li class="menu__li"><a href="services.html" class="link">Сервисы</a></li>
+      <li class="menu__li active"><a href="e-gov_laws.html" class="link">E Gov законы</a></li>
+
+      <li class="menu__li dropdown">
+        <button type="button" class="btn-tr dropdown_btn">Ru<svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.83893 0.288724L6.00537 4.11864L10.1718 0.288724C10.5906 -0.0962415 11.2671 -0.0962415 11.6859 0.288724C12.1047 0.67369 12.1047 1.29556 11.6859 1.68052L6.75705 6.21128C6.33825 6.59624 5.66174 6.59624 5.24295 6.21128L0.314094 1.68052C-0.104697 1.29556 -0.104697 0.67369 0.314095 0.288724C0.732886 -0.086371 1.42013 -0.0962419 1.83893 0.288724Z" fill="#0047FF"/></svg></button>
+        <div class="dropdown_menu">
+          <ul>
+            <li><a href="#" class="dropdown__link">en</a></li>
+            <li><a href="#" class="dropdown__link">ua</a></li>
+            <li><a href="#" class="dropdown__link">ru</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li><button type="button" class="btn-tr btn-mob open"><svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1 0C0.447708 0 0 0.447716 0 1C0 1.55228 0.447723 2 1 2H29C29.5523 2 30 1.55228 30 1C30 0.447716 29.5523 0 29 0H1ZM0 8C0 7.44772 0.447708 7 1 7H29C29.5523 7 30 7.44772 30 8C30 8.55228 29.5523 9 29 9H1C0.447723 9 0 8.55228 0 8ZM0 15C0 14.4477 0.447708 14 1 14H29C29.5523 14 30 14.4477 30 15C30 15.5523 29.5523 16 29 16H1C0.447723 16 0 15.5523 0 15Z" fill="#1E1E1E"/></svg></button></li>
+    </ul>
+  </nav>
+
+  <nav class="mob-menu">
+    <div class="wrap">
+      <ul class="menu">
+        <li class="dropdown">
+          <button type="button" class="btn-tr dropdown_btn">Ru<svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.83893 0.288724L6.00537 4.11864L10.1718 0.288724C10.5906 -0.0962415 11.2671 -0.0962415 11.6859 0.288724C12.1047 0.67369 12.1047 1.29556 11.6859 1.68052L6.75705 6.21128C6.33825 6.59624 5.66174 6.59624 5.24295 6.21128L0.314094 1.68052C-0.104697 1.29556 -0.104697 0.67369 0.314095 0.288724C0.732886 -0.086371 1.42013 -0.0962419 1.83893 0.288724Z" fill="#0047FF"/></svg></button>
+          <div class="dropdown_menu">
+            <ul>
+              <li><a href="#" class="dropdown__link">en</a></li>
+              <li><a href="#" class="dropdown__link">ua</a></li>
+              <li><a href="#" class="dropdown__link">ru</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><button class="btn-tr btn-mob close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.686523" y="21.8997" width="30" height="2" rx="1" transform="rotate(-45 0.686523 21.8997)" fill="black"/><rect x="2.59082" y="0.686279" width="30" height="2" rx="1" transform="rotate(45 2.59082 0.686279)" fill="black"/></svg></button></li>
+      </ul>
+    </div>
+
+    <div class="mob-menu_nav">
+      <ul>
+        <li><a href="regions.html" class="link">регионы</a></li>
+
+        <li><a href="about.html" class="link">о нас</a></li>
+
+        <li><a href="services.html" class="link">сервисы</a></li>
+
+        <li><a href="e-gov_laws.html" class="link">E Gov законы</a></li>
+
+      </ul>
+    </div>
+  </nav>
+</header>
+
+  <section class="wrap service service-laws">
+    <div class="cn">
+      <div class="info">
+        <h1 class="title big">Список законодательных документов</h1>
+        <figure class="cn__img">
+          <img class="img" src="src/img/select-service.svg" alt="">
+        </figure>
+        <p>Многие активности в Украине и любой другой правовой стране невозможны без участия государства так как именно государство принимает законы, которые разрешают электронный документооборот вместо бумажного, оплату картой вместе оплаты наличными и так далее</p>
+        <p>Поэтому мы представили список всех законопроектов, которые есть в Украине на данный момент. Для вашего удобства они разбиты на категории и даты принятия</p>
+      </div>
+
+      <section class="get-select-service">
+        <ul class="get-select-service__ctg accordion mobile">
+          <li>
+            <header class="select-link select-accordion__header" data-hash="#laws">Закони<span class="count">25</span></header>
+
+            <ul class="select-accordion__content">
+              <li>
+                <a href="service_car-numbers.html" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="service_car-numbers.html" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <header class="select-link select-accordion__header" data-hash="#international_documents">Международные документы<span class="count">25</span></header>
+
+            <ul class="select-accordion__content">
+              <li>
+                <a href="#" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <header class="select-link select-accordion__header" data-hash="#punish">Накази<span class="count">25</span></header>
+
+            <ul class="select-accordion__content">
+              <li>
+                <a href="#" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <header class="select-link select-accordion__header" data-hash="#orders">Распоряжения<span class="count">25</span></header>
+
+            <ul class="select-accordion__content">
+              <li>
+                <a href="#" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <header class="select-link select-accordion__header" data-hash="#presidential_decree">Указ президента<span class="count">25</span></header>
+
+            <ul class="select-accordion__content">
+
+              <li>
+                <a href="#" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <header class="select-link select-accordion__header" data-hash="#postanova">Постанова<span class="count">25</span></header>
+
+            <ul class="select-accordion__content">
+
+              <li>
+                <a href="#" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <div class="get-select-service__ctg desktop">
+
+          <div class="cn__select-link">
+            <a href="#laws" class="select-link">Закони<span class="count">25</span></a>
+            <a href="#international_documents" class="select-link">Международные документы<span class="count">25</span></a>
+            <a href="#punish" class="select-link">Накази<span class="count">25</span></a>
+            <a href="#orders" class="select-link">Распоряжения<span class="count">25</span></a>
+            <a href="#presidential_decree" class="select-link">Указ президента<span class="count">25</span></a>
+            <a href="#postanova" class="select-link">Постанова<span class="count">25</span></a>
+          </div>
+
+          <div class="accordion accordion-tabs" data-hash="#laws">
+            <ul class="accordion-tabs__it">
+              <li>
+                <a href="service_car-numbers.html" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+              <li>
+                <a href="service_car-numbers.html" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="accordion accordion-tabs" data-hash="#international_documents">
+            <ul class="accordion-tabs__it">
+              <li>
+                <a href="#" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="accordion accordion-tabs" data-hash="#punish">
+            <ul class="accordion-tabs__it">
+              <li>
+                <a href="#" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="accordion accordion-tabs" data-hash="#orders">
+            <ul class="accordion-tabs__it">
+              <li>
+                <a href="#" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="accordion accordion-tabs" data-hash="#presidential_decree">
+            <ul class="accordion-tabs__it">
+              <li>
+                <a href="#" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="accordion accordion-tabs" data-hash="#postanova">
+            <ul class="accordion-tabs__it">
+              <li>
+                <a href="#" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="accordion__it__link">
+                  <p>
+                    <strong>Про заходи щодо розвитку національної складової глобальної інформаційної мережі Інтернет та забезпечення широкого доступу до цієї мережі в Україні</strong>
+                  </p>
+                  <p>Указ від <time datetime="14.07.2000">14.07.2000</time> № 887/2000</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section class="wrap to_partner">
+    <div class="cn">
+      <h2 class="title">Хочешь развивать E GOV в Украине или стать партнером?</h2>
+      <div class="info">
+        <div class="des">
+          <h3>Стань амбасадором в своем городе!</h3>
+          <p>Мы занимаемся популяризацией e-gov в Украине и упрощаем использование сервисов для всех людей. Если вы заметили на сайте неточности, или считаете, что мы не добавили какой-то e-сервис — напишите нам</p>
+        </div>
+        <div class="cn__btn">
+          <button class="btn blue reqMessage">
+            <span class="ico-left"><svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.6 0H2.4C1.08 0 0.012 1.06875 0.012 2.375L0 16.625C0 17.9312 1.08 19 2.4 19H21.6C22.92 19 24 17.9312 24 16.625V2.375C24 1.06875 22.92 0 21.6 0ZM21.6 16.625H2.4V4.75L10.092 9.50742C11.2594 10.2294 12.7406 10.2294 13.908 9.50742L21.6 4.75V16.625ZM13.908 7.13242C12.7406 7.85443 11.2594 7.85443 10.092 7.13242L2.4 2.375H21.6L13.908 7.13242Z" fill="white"/></svg></span>
+            Отправить запрос
+          </button>
+          <a href="services.html" class="btn brd">
+            <span class="ico-left"><svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.92404 0C3.05496 0 0.704291 1.82041 0.0377344 4.36047C-0.172708 5.16241 0.528162 5.84486 1.36708 5.84486C2.20599 5.84486 2.86551 5.13064 3.29411 4.41849C3.83062 3.52704 4.83379 2.89716 5.92404 2.89716C7.53851 2.89716 8.96202 4.27837 8.96202 5.84486C8.96202 8.44948 5.39729 8.5159 4.56751 11.8428C4.36575 12.6518 5.08034 13.3404 5.92404 13.3404C6.76775 13.3404 7.41729 12.6285 7.79789 11.885C8.85988 9.81021 12 9.00788 12 5.84486C12 2.54344 9.32658 0 5.92404 0ZM4.18806 17.3156C4.18806 16.3853 4.95173 15.6312 5.89378 15.6312H5.95431C6.89635 15.6312 7.66003 16.3853 7.66003 17.3156C7.66003 18.2459 6.89635 19 5.95431 19H5.89378C4.95174 19 4.18806 18.2459 4.18806 17.3156Z" fill="#1E1E1E"/></svg></span>
+            Узнать о наших сервисах
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer wrap">
+    <div class="cn">
+      <div class="content">
+        <div class="info">
+          <a href="./" class="logo"><img src="src/img/logo.svg" alt="EGov" class="img"></a>
+          <p class="des">Если у вас есть любые предложения или замечания — напишите нам</p>
+          <a class="mail" href="mailto:info@egov.in.ua">info@egov.in.ua</a>
+          <a class="address" href="#">улица Мечникова 22 Киев, Украина</a>
+        </div>
+        <nav class="nav">
+          <div class="nav__it">
+            <p class="title">страницы</p>
+            <ul>
+              <li><a class="link" href="./">Главная</a></li>
+              <li><a class="link" href="regions.html">Регионы</a></li>
+              <li><a class="link" href="about.html">О нас</a></li>
+              <li><a class="link" href="services.html">Сервисы</a></li>
+              <li><a class="link" href="e-gov_laws.html">E Gov законы</a></li>
+            </ul>
+          </div>
+
+          <div class="nav__it">
+            <p class="title">информация</p>
+            <ul>
+              <li><a class="link" href="./">Главная</a></li>
+              <li><a class="link" href="regions.html">Регионы</a></li>
+              <li><a class="link" href="about.html">О нас</a></li>
+              <li><a class="link" href="services.html">Сервисы</a></li>
+              <li><a class="link" href="e-gov_laws.html">E Gov законы</a></li>
+            </ul>
+          </div>
+
+          <div class="nav__it">
+            <p class="title">Следите на нами</p>
+            <ul>
+              <li><a class="link" href="#" target="_blank">Telegram</a></li>
+              <li><a class="link" href="#" target="_blank">Instagram</a></li>
+              <li><a class="link" href="#" target="_blank">Facebook</a></li>
+              <li><a class="link" href="#" target="_blank">Twitter</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="copy">© Copyright 2019</div>
+    </div>
+  </footer>
+
+  <div class="modal post-message">
+    <div class="cn">
+      <button class="btn-tr modal-close"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32.5731" height="3.25731" rx="1.62866" transform="matrix(0.706822 0.707391 -0.706822 0.707391 2.91797 0.0770264)" fill="#333333"/><rect width="32.5731" height="3.25731" rx="1.62866" transform="matrix(-0.706822 0.707391 -0.706822 -0.707391 25.9414 2.38123)" fill="#333333"/></svg></button>
+
+      <form action="#" method="post" class="wrap">
+        <strong>Наш менеджер поможет Вам</strong>
+        <label class="req">
+          <span>Ваш телефон</span>
+          <input type="tel" name="phone" placeholder="095 00 00 000" required>
+        </label>
+        <label class="req">
+          <span>Ваш E-mail</span>
+          <input type="email" name="email" placeholder="example@email.com" required>
+        </label>
+        <label class="req">
+          <span>Ваше Сообщение</span>
+          <textarea type="text" name="message"></textarea>
+        </label>
+        <button type="submit" class="btn blue">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <div class="modal sent">
+    <div class="cn">
+      <div class="ico"><svg width="44" height="31" viewBox="0 0 44 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M42.7992 1L17.1992 29.8L1.19922 17" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <strong>Спасибо! Сообщение отправлено</strong>
+      <p>Мы свяжемся с Вами в течение часа. Обращения обрабатываются с 10 до 18 с понедельника по пятницу</p>
+      <a href="./" class="btn blue">Перейти на главную</a>
+    </div>
+  </div>
+  <div class="modal sent error">
+    <div class="cn">
+      <div class="ico"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32.5731" height="3.25731" rx="1.62866" transform="matrix(0.706822 0.707391 -0.706822 0.707391 2.91797 0.0770264)" fill="#FFFFFF"/><rect width="32.5731" height="3.25731" rx="1.62866" transform="matrix(-0.706822 0.707391 -0.706822 -0.707391 25.9414 2.38123)" fill="#FFFFFF"/></svg></div>
+      <strong>Ошыбка! Что-то пошло не так.</strong>
+      <p> Сообщение не отправлено!</p>
+      <button class="btn black modal-close">Закрыть</button>
+    </div>
+  </div>
+<script type="text/javascript" src="src/js/runtime.0c16d259b95a69e2ac7f.js"></script><script type="text/javascript" src="src/js/vendors.0c16d259b95a69e2ac7f.js"></script><script type="text/javascript" src="src/js/app.0c16d259b95a69e2ac7f.js"></script></body>
+</html>

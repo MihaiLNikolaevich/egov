@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="robots" content="none">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>egov</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <style>body{-webkit-animation:start .65s;-moz-animation:start .65s;-ms-animation:start .65s;animation:start .65s}@-webkit-keyframes start{from{visibility:hidden;opacity:0}to{visibility:visible;opacity:1}}@-moz-keyframes start{from{visibility:hidden;opacity:0}to{visibility:visible;opacity:1}}@-ms-keyframes start{from{visibility:hidden;opacity:0}to{visibility:visible;opacity:1}}@-o-keyframes start{from{visibility:hidden;opacity:0}to{visibility:visible;opacity:1}}@keyframes start{from{visibility:hidden;opacity:0}to{visibility:visible;opacity:1}}</style>
+<link href="src/css/app.0c16d259b95a69e2ac7f.css" rel="stylesheet"></head>
+<body>
+    <header class="wrap header">
+    <nav class="cn">
+        <ul class="menu">
+            <li class="menu__li-logo"><a href="./" class="logo"><img class="img" src="src/img/logo.svg" alt="egov"></a></li>
+
+            <li class="menu__li"><a href="./" class="link">Главная</a></li>
+            <li class="menu__li"><a href="regions.html" class="link">Регионы</a></li>
+            <li class="menu__li active"><a href="about.html " class="link">О нас</a></li>
+            <li class="menu__li"><a href="services.html" class="link">Сервисы</a></li>
+            <li class="menu__li"><a href="e-gov_laws.html" class="link">E Gov законы</a></li>
+
+            <li class="menu__li dropdown">
+                <button type="button" class="btn-tr dropdown_btn">Ru<svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.83893 0.288724L6.00537 4.11864L10.1718 0.288724C10.5906 -0.0962415 11.2671 -0.0962415 11.6859 0.288724C12.1047 0.67369 12.1047 1.29556 11.6859 1.68052L6.75705 6.21128C6.33825 6.59624 5.66174 6.59624 5.24295 6.21128L0.314094 1.68052C-0.104697 1.29556 -0.104697 0.67369 0.314095 0.288724C0.732886 -0.086371 1.42013 -0.0962419 1.83893 0.288724Z" fill="#0047FF"/></svg></button>
+                <div class="dropdown_menu">
+                    <ul>
+                        <li><a href="#" class="dropdown__link">en</a></li>
+                        <li><a href="#" class="dropdown__link">ua</a></li>
+                        <li><a href="#" class="dropdown__link">ru</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><button type="button" class="btn-tr btn-mob open"><svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1 0C0.447708 0 0 0.447716 0 1C0 1.55228 0.447723 2 1 2H29C29.5523 2 30 1.55228 30 1C30 0.447716 29.5523 0 29 0H1ZM0 8C0 7.44772 0.447708 7 1 7H29C29.5523 7 30 7.44772 30 8C30 8.55228 29.5523 9 29 9H1C0.447723 9 0 8.55228 0 8ZM0 15C0 14.4477 0.447708 14 1 14H29C29.5523 14 30 14.4477 30 15C30 15.5523 29.5523 16 29 16H1C0.447723 16 0 15.5523 0 15Z" fill="#1E1E1E"/></svg></button></li>
+        </ul>
+    </nav>
+
+    <nav class="mob-menu">
+        <div class="wrap">
+            <ul class="menu">
+                <li class="dropdown">
+                    <button type="button" class="btn-tr dropdown_btn">Ru<svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.83893 0.288724L6.00537 4.11864L10.1718 0.288724C10.5906 -0.0962415 11.2671 -0.0962415 11.6859 0.288724C12.1047 0.67369 12.1047 1.29556 11.6859 1.68052L6.75705 6.21128C6.33825 6.59624 5.66174 6.59624 5.24295 6.21128L0.314094 1.68052C-0.104697 1.29556 -0.104697 0.67369 0.314095 0.288724C0.732886 -0.086371 1.42013 -0.0962419 1.83893 0.288724Z" fill="#0047FF"/></svg></button>
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="#" class="dropdown__link">en</a></li>
+                            <li><a href="#" class="dropdown__link">ua</a></li>
+                            <li><a href="#" class="dropdown__link">ru</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><button class="btn-tr btn-mob close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.686523" y="21.8997" width="30" height="2" rx="1" transform="rotate(-45 0.686523 21.8997)" fill="black"/><rect x="2.59082" y="0.686279" width="30" height="2" rx="1" transform="rotate(45 2.59082 0.686279)" fill="black"/></svg></button></li>
+            </ul>
+        </div>
+
+        <div class="mob-menu_nav">
+            <ul>
+                <li><a href="regions.html" class="link">регионы</a></li>
+
+                <li><a href="about.html" class="link">о нас</a></li>
+
+                <li><a href="services.html" class="link">сервисы</a></li>
+
+                <li><a href="e-gov_laws.html" class="link">E Gov законы</a></li>
+
+            </ul>
+        </div>
+    </nav>
+</header>
+
+    <section class="wrap head not-home">
+        <div class="cn__img">
+            <img class="img" src="src/img/head.jpg" alt="">
+        </div>
+        <div class="cn">
+            <h1>О нас</h1>
+            <p class="title-des">Мы занимаемся развитием и популяризацией E-gov решений в Украине. Наш сайт является сервисом - агрегатором всех e-gov решений в стране. Наша команда постоянно следит за тем, чтоб информация была актуальна и постоянно обновлялась.</p>
+        </div>
+    </section>
+
+    <section class="wrap how-we-work">
+        <div class="cn">
+            <h2 class="title">Наши основные направления</h2>
+            <ul class="gall">
+                <li class="gall__it">
+                    <strong>Всеукраинская база<br>e-service</strong>
+                    <p>Для удобства мы собрали все e-service в одном месте. Теперь вам не нужно искать в интернете нужную услугу. Все можно найти все на одной платформе</p>
+                </li>
+                <li class="gall__it">
+                    <strong>Гранты на развитие проектов в сфере e-gov</strong>
+                    <p>Отбираем заявки на грантовые проекты в сфере e-gov и обрабатываем их в сотрудничестве с венчурными организациями</p>
+                </li>
+                <li class="gall__it">
+                    <strong>Стать волонтером в своем регионе</strong>
+                    <p>Хочешь стать амбасадором своей области? Присоединяйся</p>
+                </li>
+                <li class="gall__it">
+                    <strong>Удобная база региональных<br> e-service</strong>
+                    <p>Платформа разделена на всеукраинские и региональные сайты. Тут вы сможете с легкостью найти все электронные сервисы в вашем регионе</p>
+                </li>
+                <li class="gall__it">
+                    <strong>Сотрудничество между государственными органами</strong>
+                    <p>Работам над сотрудничеством между горсударственными органами для передачи знаний, наработок и популяризации электронных решений</p>
+                </li>
+                <li class="gall__it">
+                    <strong>Сотрудничество и иностранными партнерами</strong>
+                    <p>Сотрудничаем с иностранными партнерами для передачи опыта и развития электронных регений в Украине</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="wrap how-we-work-card">
+        <div class="cn">
+            <div class="content-video">
+                <h2 class="title mobile">Что такое e-service</h2>
+                <video poster="src/img/poster.jpg" id="player" playsinline controls>
+                    <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4"/>
+                </video>
+            </div>
+            <div class="content">
+                <h2 class="title desktop">Что такое e-service</h2>
+                <p>После вам будут доступны сервисы Портал E Gov это решение для просмотра электронных сервисов в Украине и для единого доступа к ним. Для вашего удобства сервисы разбиты на всеукраинеские и региональные категории</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrap contacts">
+        <div class="cn">
+            <h2 class="title">Будем на связи</h2>
+            <ul class="contacts__gall">
+                <li>
+                    <figure>
+                        <p class="cn__img"><img src="src/img/contacts/igor.jpg" alt="Игорь Николаев" class="img"></p>
+                        <figcaption><strong class="contacts__name">Игорь Николаев</strong></figcaption>
+                    </figure>
+                    <p class="contacts__pos">Сотрудничество и партнерство</p>
+                    <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                    <div>
+                        <a href="#" class="contacts__link in"></a>
+                        <a href="#" class="contacts__link twi"></a>
+                        <a href="#" class="contacts__link fac"></a>
+                    </div>
+                </li>
+                <li>
+                    <figure>
+                        <p class="cn__img"><img src="src/img/contacts/viki.jpg" alt="Виктория Петрухина" class="img"></p>
+                        <figcaption><strong class="contacts__name">Виктория Петрухина</strong></figcaption>
+                    </figure>
+                    <p class="contacts__pos">PR и работа с прессой</p>
+                    <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                    <div>
+                        <a href="#" class="contacts__link in"></a>
+                        <a href="#" class="contacts__link twi"></a>
+                        <a href="#" class="contacts__link fac"></a>
+                    </div>
+                </li>
+                <li>
+                    <figure>
+                        <p class="cn__img"><img src="src/img/contacts/alex.jpg" alt="Александр Алименко" class="img"></p>
+                        <figcaption><strong class="contacts__name">Александр Алименко</strong></figcaption>
+                    </figure>
+                    <p class="contacts__pos">Технические решения</p>
+                    <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                    <div>
+                        <a href="#" class="contacts__link in"></a>
+                        <a href="#" class="contacts__link twi"></a>
+                        <a href="#" class="contacts__link fac"></a>
+                    </div>
+                </li>
+                <li>
+                    <figure>
+                        <p class="cn__img"><img src="src/img/contacts/viki.jpg" alt="Ольга Симсон" class="img"></p>
+                        <figcaption><strong class="contacts__name">Ольга Симсон</strong></figcaption>
+                    </figure>
+                    <p class="contacts__pos">Юридическое сопровождение</p>
+                    <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                    <div>
+                        <a href="#" class="contacts__link in"></a>
+                        <a href="#" class="contacts__link twi"></a>
+                        <a href="#" class="contacts__link fac"></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="map">
+        <div id="map" data-lat="50.424144" data-lng="30.512645"></div>
+        <div class="wrap map__contacts">
+            <div class="map__address">
+                <p class="map__title">
+                    <span><svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.75244 0C2.57216 0 0 2.57216 0 5.75244C0 9.17925 3.63225 13.9045 5.12789 15.7042C5.4566 16.0986 6.0565 16.0986 6.38521 15.7042C7.87262 13.9045 11.5049 9.17925 11.5049 5.75244C11.5049 2.57216 8.93272 0 5.75244 0ZM5.75244 7.80688C4.61839 7.80688 3.698 6.88649 3.698 5.75244C3.698 4.61839 4.61839 3.698 5.75244 3.698C6.88649 3.698 7.80688 4.61839 7.80688 5.75244C7.80688 6.88649 6.88649 7.80688 5.75244 7.80688Z" fill="white"/></svg></span>
+                    Адреса
+                </p>
+                <a href="#" class="map__link" data-lat="50.424144" data-lng="30.512645">"01133 Украина, Киев, ул. Ямская 35, 17 этаж"</a>
+            </div>
+            <div>
+                <p class="map__title">
+                    <span><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.99921 7.99917L6.01978 6.2666L0.360352 11.118C0.566066 11.3089 0.84378 11.4277 1.15007 11.4277H14.8483C15.1535 11.4277 15.4301 11.3089 15.6346 11.118L9.97863 6.2666L7.99921 7.99917Z" fill="white"/><path d="M15.6387 0.309714C15.433 0.117714 15.1564 0 14.849 0H1.15071C0.845567 0 0.568995 0.118857 0.363281 0.312L7.99985 6.85714L15.6387 0.309714Z" fill="white"/><path d="M10.4766 5.80457L16 10.4983V1L10.4766 5.80457Z" fill="white"/><path d="M0 1.00293V10.4978L5.52343 5.80407L0 1.00293Z" fill="white"/></svg></span>
+                    Почта
+                </p>
+                <a href="mailto:info@eserv.gov.ua" class="map__link">info@eserv.gov.ua</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="wrap agent">
+        <div class="cn">
+            <h2 class="title">Наши представители в Регионах</h2>
+            <div class="agent__cn">
+                <ul class="agent__gall">
+                    <li class="active">
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">АР Крым</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Днепропетровская</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Донецкая</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Ивано-Франковская</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Львовская</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Ровенская</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Херсонская</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Черкасская</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Винницкая</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Житомирская</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Кировоградская</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Сумская</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Николаевская</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Хмельницкая</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Волынская</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Закарпатская</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Киевская</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Одесская</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Тернопольская</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Черниговская</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Днепропетровская</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Запорожская</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Луганская</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Черновицкая</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Харьковская</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <header class="agent__head accordion__header">
+                            <p class="agent__location">Полтавская</p>
+                            <hr>
+                            <p class="agent__name">Николаев Игорь</p>
+                        </header>
+                        <div class="agent__content accordion__content">
+                            <a href="mailto:info@eserv.gov.ua" class="contacts__mail">info@eserv.gov.ua</a>
+                            <p>
+                                <a href="#" class="contacts__link in"></a>
+                                <a href="#" class="contacts__link twi"></a>
+                                <a href="#" class="contacts__link fac"></a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="wrap material">
+        <div class="cn">
+            <h2 class="title">Информационные материалы</h2>
+            <ul class="material__gall">
+                <li>
+                    <figure>
+                        <p class="cn__img"><img src="xxxHTMLLINKxxx0.52861540187251290.0898016571942366xxx" alt="" class="img"></p>
+                        <figcaption>Onepager (e-serv) in Ukraine</figcaption>
+                    </figure>
+                    <a href="#" class="btn blue" download="">Скачати</a>
+                </li>
+                <li>
+                    <figure>
+                        <p class="cn__img"><img src="xxxHTMLLINKxxx0.57428544771115050.4679773104461631xxx" alt="" class="img"></p>
+                        <figcaption>Презентация сервиса</figcaption>
+                    </figure>
+                    <a href="#" class="btn blue" download="">Скачати</a>
+                </li>
+                <li>
+                    <figure>
+                        <p class="cn__img"><img src="xxxHTMLLINKxxx0.75833869481555620.8167772805804725xxx" alt="" class="img"></p>
+                        <figcaption>Презентация сервиса</figcaption>
+                    </figure>
+                    <a href="#" class="btn blue" download="">Скачати</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="wrap subscribe">
+        <div class="cn">
+            <h2 class="title">Подпишитесь на рассылку</h2>
+            <p class="title-des"> Узнавай о новых сервисах и законадательстве в Украине и других станах</p>
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Введите ваш E-mail" required>
+                <button type="submit" class="btn black">Подписаться</button>
+                <button type="submit" class="btn blue">Telegram <span class="ico"><svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.255 24.8841C22.9325 25.618 23.5616 24.0803 23.5616 24.0803L28 1.78335C27.9651 0.280584 25.9381 1.18924 25.9381 1.18924L1.08994 10.9398C1.08994 10.9398 -0.0982929 11.3591 0.00655147 12.0931C0.111396 12.827 1.055 13.1764 1.055 13.1764L7.31071 15.2733C7.31071 15.2733 9.19791 21.4591 9.58234 22.6474C9.93182 23.8007 10.2464 23.8356 10.2464 23.8356C10.5958 23.9754 10.9104 23.7308 10.9104 23.7308L14.9643 20.0612L21.255 24.8841ZM22.3384 5.73245C22.3384 5.73245 23.2121 5.20823 23.1772 5.73245C23.1772 5.73245 23.317 5.80235 22.8626 6.29162C22.4433 6.711 12.5529 15.5878 11.2249 16.7761C11.1201 16.846 11.0502 16.9508 11.0502 17.0906L10.6657 20.3757C10.5958 20.7252 10.1415 20.7601 10.0367 20.4456L8.39411 15.0636C8.32421 14.8539 8.39411 14.6093 8.6038 14.4695L22.3384 5.73245Z" fill="white"/></svg></span></button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer wrap">
+        <div class="cn">
+            <div class="content">
+                <div class="info">
+                    <a href="./" class="logo"><img src="src/img/logo.svg" alt="EGov" class="img"></a>
+                    <p class="des">Если у вас есть любые предложения или замечания — напишите нам</p>
+                    <a class="mail" href="mailto:info@egov.in.ua">info@egov.in.ua</a>
+                    <a class="address" href="#">улица Мечникова 22 Киев, Украина</a>
+                </div>
+                <nav class="nav">
+                    <div class="nav__it">
+                        <p class="title">страницы</p>
+                        <ul>
+                            <li><a class="link" href="./">Главная</a></li>
+                            <li><a class="link" href="regions.html">Регионы</a></li>
+                            <li><a class="link" href="about.html">О нас</a></li>
+                            <li><a class="link" href="services.html">Сервисы</a></li>
+                            <li><a class="link" href="e-gov_laws.html">E Gov законы</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav__it">
+                        <p class="title">информация</p>
+                        <ul>
+                            <li><a class="link" href="./">Главная</a></li>
+                            <li><a class="link" href="regions.html">Регионы</a></li>
+                            <li><a class="link" href="about.html">О нас</a></li>
+                            <li><a class="link" href="services.html">Сервисы</a></li>
+                            <li><a class="link" href="e-gov_laws.html">E Gov законы</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav__it">
+                        <p class="title">Следите на нами</p>
+                        <ul>
+                            <li><a class="link" href="#" target="_blank">Telegram</a></li>
+                            <li><a class="link" href="#" target="_blank">Instagram</a></li>
+                            <li><a class="link" href="#" target="_blank">Facebook</a></li>
+                            <li><a class="link" href="#" target="_blank">Twitter</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="copy">© Copyright 2019</div>
+        </div>
+    </footer>
+
+    <div class="modal post-message">
+        <div class="cn">
+            <button class="btn-tr modal-close"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32.5731" height="3.25731" rx="1.62866" transform="matrix(0.706822 0.707391 -0.706822 0.707391 2.91797 0.0770264)" fill="#333333"/><rect width="32.5731" height="3.25731" rx="1.62866" transform="matrix(-0.706822 0.707391 -0.706822 -0.707391 25.9414 2.38123)" fill="#333333"/></svg></button>
+
+            <form action="#" method="post" class="wrap">
+                <strong>Наш менеджер поможет Вам</strong>
+                <label class="req">
+                    <span>Ваш телефон</span>
+                    <input type="tel" name="phone" placeholder="095 00 00 000" required>
+                </label>
+                <label class="req">
+                    <span>Ваш E-mail</span>
+                    <input type="email" name="email" placeholder="example@email.com" required>
+                </label>
+                <label class="req">
+                    <span>Ваше Сообщение</span>
+                    <textarea type="text" name="message"></textarea>
+                </label>
+                <button type="submit" class="btn blue">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal sent">
+        <div class="cn">
+            <div class="ico"><svg width="44" height="31" viewBox="0 0 44 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M42.7992 1L17.1992 29.8L1.19922 17" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <strong>Спасибо! Сообщение отправлено</strong>
+            <p>Мы свяжемся с Вами в течение часа. Обращения обрабатываются с 10 до 18 с понедельника по пятницу</p>
+            <a href="./" class="btn blue">Перейти на главную</a>
+        </div>
+    </div>
+    <div class="modal sent error">
+        <div class="cn">
+            <div class="ico"><svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32.5731" height="3.25731" rx="1.62866" transform="matrix(0.706822 0.707391 -0.706822 0.707391 2.91797 0.0770264)" fill="#FFFFFF"/><rect width="32.5731" height="3.25731" rx="1.62866" transform="matrix(-0.706822 0.707391 -0.706822 -0.707391 25.9414 2.38123)" fill="#FFFFFF"/></svg></div>
+            <strong>Ошыбка! Что-то пошло не так.</strong>
+            <p> Сообщение не отправлено!</p>
+            <button class="btn black modal-close">Закрыть</button>
+        </div>
+    </div>
+<script type="text/javascript" src="src/js/runtime.0c16d259b95a69e2ac7f.js"></script><script type="text/javascript" src="src/js/vendors.0c16d259b95a69e2ac7f.js"></script><script type="text/javascript" src="src/js/app.0c16d259b95a69e2ac7f.js"></script></body>
+</html>
