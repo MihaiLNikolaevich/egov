@@ -51,20 +51,6 @@ export class Menu {
     }
 }
 
-
-export function sizeHead(selector = '.header') {
-    const head = document.querySelector(selector);
-    if (!head || window.innerWidth < 1350) return;
-
-    const check = (y) => (y > 60) ? head.classList.add('min') : head.classList.remove('min');
-
-    window.addEventListener('scroll', () => {
-
-        check(window.pageYOffset);
-
-    },{ capture: false, passive: true });
-}
-
 export function overflow(value) {
     document.documentElement.style.overflow = value || '';
     document.body.style.overflow = value || '';
