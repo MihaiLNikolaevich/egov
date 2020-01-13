@@ -36,11 +36,16 @@ module.exports = merge(common, {
             {
                 test: /\.s[ac]ss$/i,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            publicPath: (resourcePath, context) => {
+                                return path.relative(path.dirname(resourcePath), context) + '/';
+                            }
+                        }
+                    },
                     {
                         loader: "css-loader",
-                        options: {
-                        },
                     },
                     {
                         loader: 'postcss-loader',

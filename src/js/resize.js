@@ -2,7 +2,6 @@
 export function windowResize(arrFunction) {
   function actualResize(arrFunction, prevWidth = 0) {
     if (prevWidth !== window.innerWidth){
-      console.log('prevWidth', prevWidth);
       for (const fun of arrFunction) {
         fun()
       }
